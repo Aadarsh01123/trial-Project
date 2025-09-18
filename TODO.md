@@ -1,12 +1,4 @@
-# TODO: Monthly Attendance Calculation and Display
+# TODO List
 
-## Completed Tasks
-
-- [x] Add monthly report section to teacherdashboard.html
-- [x] Add logic to teacher.js to calculate and display report when month ends
-
-## Pending Tasks
-
-- [ ] Test the functionality by selecting a past month in the teacher dashboard
-- [ ] Verify calculations for total working days, present days, and percentage
-- [ ] Ensure report only shows after the last day of the month
+- [x] Reverted username functionality back to original state.
+- [ ] Original functionality: Students are added with name and dob, login as hardcoded 'student'.

@@ -1,0 +1,273 @@
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login container */
+.login-container {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 360px;
+    box-sizing: border-box;
+}
+
+/* Login form */
+.login-form h2 {
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px 0;
+    background: #667eea;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #5a67d8;
+}
+
+.message {
+    margin-top: 12px;
+    text-align: center;
+    color: red;
+    font-weight: 500;
+}
+
+/* Dashboard styles */
+.dashboard-container {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.dashboard-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Dashboard header */
+.dashboard-container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Logout button */
+.logout-btn {
+    background: #e53e3e;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Add student section */
+.add-student {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.add-student h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.add-student input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.add-student button {
+    background: #48bb78;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Student list */
+.student-list {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.student-list h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.student-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.student-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Summary cards */
+.summary-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #4a5568;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+/* Attendance table */
+.attendance-table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+.attendance-table-container h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+th {
+    background: #edf2f7;
+    font-weight: 600;
+}
+
+.status-selector {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e0;
+}
+
+/* Status colors */
+.present-status {
+    color: green;
+    font-weight: 600;
+}
+
+.absent-status {
+    color: red;
+    font-weight: 600;
+}
+
+.leave-status {
+    color: orange;
+    font-weight: 600;
+}
+
+/* Attendance status colors for selects */
+.status-selector.present {
+    background-color: #d4edda; /* light green */
+    color: #05f03c; /* dark green */
+}
+
+.status-selector.absent {
+    background-color: #f8d7da; /* light red */
+    color: #db0016; /* dark red */
+}
+
+.status-selector.leave {
+    background-color: #fff3cd; /* light yellow */
+    color: #ddaa10; /* dark yellow */
+}
+
+/* Sundays highlighted in yellow */
+.status-selector.sunday {
+    background-color: #fff3cd !important; /* override other colors */
+    color: #856404 !important;
+}
